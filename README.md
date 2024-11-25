@@ -23,7 +23,7 @@ A full-stack application with Spring Boot backend and React TypeScript frontend.
 2. Run in development mode
 - .\run.bat
 
-3. Build development application:
+3. Build production application:
 - .\build.bat -p 8082 -profile prod
 
 4. Run in production mode
