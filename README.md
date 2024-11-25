@@ -18,13 +18,13 @@ A full-stack application with Spring Boot backend and React TypeScript frontend.
 ## Quick Start
 
 1. Build the application:
-- build.bat
+- .\build.bat
 
 2. Run in development mode
-- run-dev.bat
+- .\run-dev.bat
 
 3. Run in production mode
-- run-prod.bat
+- .\run-prod.bat
 
 ## Environment Configuration
 
@@ -52,6 +52,6 @@ Access health endpoint: /actuator/health
 
 ## Contributing
 
-Create feature branch
-Make changes
-Submit pull request
+- Create feature branch
+- Make changes
+- Submit pull request
