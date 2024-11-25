@@ -1,9 +1,16 @@
 # Frontend build stage
 FROM node:20-alpine AS frontend-builder
 WORKDIR /frontend
+
+# Set environment variable for the backend API URL
+ARG REACT_APP_API_URL
+ENV REACT_APP_API_URL=${REACT_APP_API_URL}
+
 COPY frontend/package*.json ./
 RUN npm install
 COPY frontend/ ./
+
+# Pass the environment variable during the build process
 RUN npm run build
 
 # Backend build stage
@@ -37,7 +44,7 @@ RUN addgroup -S appgroup && \
     adduser -S appuser -G appgroup && \
     mkdir -p /app/logs/dev /app/logs/prod && \
     chown -R appuser:appgroup /app && \
-    chmod -R 755 /app/logs
+    chmod -R 777 /app/logs
 
 USER appuser
 

@@ -17,14 +17,17 @@ A full-stack application with Spring Boot backend and React TypeScript frontend.
 
 ## Quick Start
 
-1. Build the application:
-- .\build.bat
+1. Build development application:
+- .\build.bat -p 8081 -profile dev
 
 2. Run in development mode
-- .\run-dev.bat
+- .\run.bat
 
-3. Run in production mode
-- .\run-prod.bat
+3. Build development application:
+- .\build.bat -p 8082 -profile prod
+
+4. Run in production mode
+- .\run.bat prod
 
 ## Environment Configuration
 
